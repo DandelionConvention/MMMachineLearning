@@ -12,6 +12,9 @@ class LinearRegression:
         (data_processed,
          features_mean,
          features_deviation)  = prepare_for_training(data, polynomial_degree, sinusoid_degree,normalize_data=True)
+        # polynomial_degree: 多项式特征的最高次数，默认为0，表示不使用多项式特征。
+        #
+        # sinusoid_degree: 正弦函数特征的最高次数，默认为0，表示不使用正弦函数特征。
 
         self.data = data_processed
         # (n,2)多补了一列1
