@@ -28,7 +28,7 @@ class LinearRegression:
         num_features = self.data.shape[1] # 特征个数
         self.theta = np.zeros((num_features,1))
 
-    def train(self,alpha,num_iterations = 500):
+    def train(self,alpha,num_iterations = 1000):
         """
         训练入口
         :param alpha: 学习率
